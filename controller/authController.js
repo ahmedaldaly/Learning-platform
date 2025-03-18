@@ -11,7 +11,7 @@ passport.use(
     {
       clientID: process.env.CLIENT_ID, // معرف العميل من Google
       clientSecret: process.env.CLIENT_SECRET, // المفتاح السري للعميل
-      callbackURL: "https://golden-madalyn-eldaly-de3f4bfd.koyeb.app/v1/api/auth/google/callback"
+      callbackURL: "https://golden-madalyn-eldaly-de3f4bfd.koyeb.app/auth/google/callback"
 
  // رابط الاسترجاع بعد تسجيل الدخول
     },
