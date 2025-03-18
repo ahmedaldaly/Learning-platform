@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+body {
+    direction: rtl;
+    background-color: #000000;
+    color: white;
+}
+.home {
+    background-image: linear-gradient(.303turn, #171653 1.94%, #160841 98.9%);
+
+}
+.homebg {
+    background-image: url('/bg.webp');
+    background-size: cover; /* هتخلي الصورة تغطي العنصر بالكامل */
+    background-repeat: no-repeat;
+    height: 300px;
+}
