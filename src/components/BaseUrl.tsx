@@ -1,1 +1,1 @@
-export const BaseUrl ='http://localhost:8000/v1/api'
+export const BaseUrl ='https://golden-madalyn-eldaly-de3f4bfd.koyeb.app'
