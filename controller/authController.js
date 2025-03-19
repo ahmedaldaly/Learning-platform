@@ -62,7 +62,7 @@ module.exports.googleCallback = async (req, res, next) => {
 
     req.user = user;
     console.log("User authenticated successfully:", req.user);
-    res.redirect(`http://localhost:3000/profile?token=${req.user.token}`);
+    res.redirect(`https://learning-platform-188p-2iej7w6dz-ahmed-eldalys-projects.vercel.app/profile?token=${req.user.token}`);
   })(req, res, next);
 };
 
