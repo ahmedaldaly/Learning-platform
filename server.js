@@ -4,7 +4,7 @@ const cors = require("cors");
 const env = require ('dotenv')
 
 env.config()
-app.use(cors({ origin: "http://localhost:3000" }));
+app.use(cors({ origin: "https://learning-platform-188p-2iej7w6dz-ahmed-eldalys-projects.vercel.app" }));
 app.use(express.json());
 const conectdb = require('./config/db')
 const port = process.env.port ;
