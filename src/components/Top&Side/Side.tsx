@@ -5,7 +5,7 @@ import Link from "next/link";
 import { FaRegUser } from "react-icons/fa";
 import { IoMdAdd,IoMdBook  } from "react-icons/io";
 import { BiCategory } from "react-icons/bi";
-
+import { TiWorld } from "react-icons/ti";
 const Side = () => {
   const [menu, setMenu] = useState(false);
 
@@ -71,6 +71,15 @@ const Side = () => {
           <IoMdBook  />
         </span>
         <span className={`${menu ? "block" : "hidden"}`}>Corses</span>
+      </Link>
+        <Link
+        href="/"
+        className=" mt-5 text-2xl flex items-center mb-2.5  gap-2 hover:text-orange-500 hover:scale-105 duration-200"
+      >
+        <span className="">
+          <TiWorld  />
+        </span>
+        <span className={`${menu ? "block" : "hidden"}`}>Home</span>
       </Link>
     </div>
   );
