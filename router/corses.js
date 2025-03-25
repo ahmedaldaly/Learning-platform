@@ -5,6 +5,7 @@ const {Authorization,verifyTokenAndAdmin} = require ('../middelware/Authorizatio
 // راوت لرفع الصورة ومجموعة فيديوهات
 router.post('/upload-course',verifyTokenAndAdmin, upload.fields([{ name: 'image', maxCount: 1 }, { name: 'videos', maxCount: 5 }]), addCourse);
 router.get('/', getAllCourse)
-router.route('/:id').delete(verifyTokenAndAdmin,deleteCourse).get(getCourse).put(verifyTokenAndAdmin,upload.fields([{ name: 'image', maxCount: 1 }, { name: 'videos', maxCount: 5 }]), editCourse)
+router.get('/:id', getCourse)
+router.route('/:id').delete(verifyTokenAndAdmin,deleteCourse).put(verifyTokenAndAdmin,upload.fields([{ name: 'image', maxCount: 1 }, { name: 'videos', maxCount: 5 }]), editCourse)
 
 module.exports = router;
